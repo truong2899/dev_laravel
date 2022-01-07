@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/new', 'NewController');
-Route::get('/admin','AdminController@ShowInfor')->middleware(['auth','role:admin']);
+Route::get('/admin','AdminController@ShowInfor')->middleware(['auth']);
